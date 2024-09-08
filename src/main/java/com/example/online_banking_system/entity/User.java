@@ -9,10 +9,11 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int Id;
+    private int id;
 
     @Column(name = "firstName")
     private String firstName;
+    //firstName
 
     @Column(name = "lastName")
     private String lastName;
@@ -21,7 +22,7 @@ public class User {
     }
 
     public User(int id, String firstName, String lastName) {
-        Id = id;
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -32,11 +33,11 @@ public class User {
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -58,7 +59,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "Id=" + Id +
+                "Id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';

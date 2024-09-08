@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public List<User> findAll() {
-        return userRepository.findAllByOrderByLastNameAsc();
+        return userRepository.findAllByOrderByFirstNameAsc();
     }
 
     @Override

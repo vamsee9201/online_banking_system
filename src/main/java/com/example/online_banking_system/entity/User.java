@@ -3,7 +3,7 @@ package com.example.online_banking_system.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User {
 
     @Id
@@ -11,11 +11,11 @@ public class User {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "firstName")
+    @Column(name = "first_name")
     private String firstName;
     //firstName
 
-    @Column(name = "lastName")
+    @Column(name = "last_name")
     private String lastName;
 
     public User() {

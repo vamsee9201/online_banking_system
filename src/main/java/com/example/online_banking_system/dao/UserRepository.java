@@ -10,5 +10,5 @@ public interface UserRepository extends JpaRepository<User,Integer> {
 
 
 
-    public List<User> findAllByOrderByLastNameAsc();
+    public List<User> findAllByOrderByFirstNameAsc();
 }
